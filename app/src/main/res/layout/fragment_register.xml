@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryTextColor"
+    tools:context=".RegisterFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondaryTextColor"
+        android:layout_margin="15dp">
+        <ImageView
+            android:id="@+id/logoRegis"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_username"
+            android:text="ชื่อผู้ใช้"
+            android:textSize="20sp"
+            android:layout_below="@+id/logoRegis"/>
+
+        <EditText
+            android:id="@+id/edt_regis_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_regis_username"
+            android:layout_margin="10dp"
+            android:inputType="textShortMessage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_email"
+            android:text="อีเมล"
+            android:textSize="20sp"
+            android:layout_below="@+id/edt_regis_username"/>
+        <EditText
+            android:layout_below="@+id/txt_regis_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_regis_email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_password"
+            android:text="รหัสผ่าน"
+            android:textSize="20sp"
+            android:layout_below="@id/edt_regis_email"/>
+        <EditText
+            android:layout_below="@+id/txt_regis_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_regis_password"
+            android:inputType="textPassword"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_acceptpassword"
+            android:text="ืยืนยันรหัสผ่าน"
+            android:textSize="20sp"
+            android:layout_below="@id/edt_regis_password"/>
+        <EditText
+            android:layout_below="@+id/txt_regis_acceptpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_regis_acceptpassword"
+            android:inputType="textPassword"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_name"
+            android:text="ชื่อ-สกุล"
+            android:textSize="20sp"
+            android:layout_below="@id/edt_regis_acceptpassword"/>
+        <EditText
+            android:layout_below="@+id/txt_regis_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_regis_name"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_gender"
+            android:text="เพศ"
+            android:textSize="20sp"
+            android:layout_below="@+id/edt_regis_name"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txt_regis_gender"
+            android:id="@+id/radio_regis_group">
+            <RadioButton android:id="@+id/radio_regis_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="ชาย"
+                android:layout_margin="10dp"/>
+            <RadioButton android:id="@+id/radio_regis_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="หญิง"
+                android:layout_margin="10dp"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_address"
+            android:text="ที่อยู่"
+            android:textSize="20sp"
+            android:layout_below="@id/radio_regis_group"/>
+        <EditText
+            android:layout_below="@+id/txt_regis_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_regis_address"
+            android:inputType="textLongMessage"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_phone"
+            android:text="เบอร์โทรศัพท์"
+            android:textSize="20sp"
+            android:layout_below="@id/edt_regis_address"/>
+        <EditText
+            android:layout_below="@+id/txt_regis_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edt_regis_phone"
+            android:inputType="number"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_regis_HBD"
+            android:text="วันเดือนปีเกิด"
+            android:textSize="20sp"
+            android:layout_below="@id/edt_regis_phone"/>
+        <TextView
+            android:id="@+id/show_regis_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_regis_HBD"
+            android:textSize="20sp"
+            android:text="--Select Birthday--"
+            android:onClick="showDatePickerDialogRegis"
+            android:padding="10dp"
+            tools:ignore="OnClick" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/show_regis_birthday"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btn_regis_cancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="ยกเลิก"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/mybutton"
+                android:layout_marginRight="40dp"
+                android:onClick="cancelRegis"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_regis_register"
+                android:text="สมัครสมาชิก"
+                android:textSize="20sp"
+                android:background="@drawable/greenbutton"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@id/btn_regis_cancel"
+                android:layout_marginBottom="80dp"
+                android:onClick="btn_register"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

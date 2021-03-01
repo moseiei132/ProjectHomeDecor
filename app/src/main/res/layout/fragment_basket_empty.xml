@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".BasketEmptyFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รถเข็นสินค้า"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/iconBasket"
+        android:layout_above="@id/notcart"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shoppingcart"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notcart"
+        android:layout_centerInParent="true"
+        android:text="ไม่มีสินค้าในรถเข็นของคุณ"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/laySearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="ค้นหาสินค้า"/>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ค้นหา"
+            android:onClick="searchproduct" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proText"
+        android:layout_below="@id/laySearch"
+        android:padding="10dp"
+        android:text="ิสินค้าทั้งหมด"
+        android:background="#FFFFFF"
+        android:textSize="20sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reccom_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/proText"
+
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+</RelativeLayout>

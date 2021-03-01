@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/checkorder"
+        android:title="ตรวจสอบคำสั่งซื้อ"
+        android:onClick="gocheckorder"/>
+    <item android:id="@+id/addorder"
+        android:title="เพิ่มสินค้าในคลัง"
+        android:onClick="goaddproductstock"/>
+    <item android:id="@+id/edtorder"
+        android:title="แก้ไขสินค้าในคลัง"
+        android:onClick="goeditproducestock"/>
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/checkshippingText"
+        android:title="ตรวจสอบสถานะการจัดส่ง"
+        android:onClick="checkshipping"/>
+    <item android:id="@+id/storyText"
+        android:title="ประวัติการสั่งซื้อ"
+        android:onClick="story" />
+    <item android:id="@+id/editProfileText"
+        android:title="แก้ไขข้อมูลส่วนตัว"
+        android:onClick="editprofile"/>
+    <item android:id="@+id/passText"
+        android:title="เปลี่ยนรหัสผ่าน"
+        android:onClick="changepass"/>
+    <item android:id="@+id/logoutText"
+        android:title="ออกจากระบบ"
+        android:onClick="logoutbutton"/>
+</menu>

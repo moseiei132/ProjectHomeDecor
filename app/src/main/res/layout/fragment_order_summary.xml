@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/secondaryTextColor"
+    tools:context=".OrderSummaryFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="สรุปรายการสั่งซื้อ"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/addr_cus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="....."
+                android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="วิธีการจัดส่ง : Kerry"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="วิธีการชำระเงิน : ไทยพาณิชย์"
+        android:layout_marginTop="10dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="ยอดสินค้าทั้งหมด"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/sub_total"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="xx"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="บาท"
+                android:textSize="20sp"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="ยืนยันการชำระเงิน"
+        android:layout_marginTop="50dp"
+        android:background="#4CAF50"/>
+
+</LinearLayout>

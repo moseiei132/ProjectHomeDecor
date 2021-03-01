@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProjectHomeDecor</string>
+    <string-array name="type_spinner">
+        <item>ห้องนอน</item>
+        <item>ห้องทำงาน</item>
+        <item>ห้องครัว</item>
+        <item>ห้องเก็บของ</item>
+        <item>ห้องนั่งเล่น</item>
+        <item>ห้องน้ำ</item>
+        <item>ห้องรับแขก</item>
+        <item>ห้องอาหาร</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

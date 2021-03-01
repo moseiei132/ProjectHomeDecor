@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="หมายเลขคำสั่งซื้อ : "
+                android:textColor="#313131"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/status_id"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="xxxxxx"
+                android:textColor="#313131"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="จัดส่ง/ยังไม่จัดส่ง"
+                android:textColor="#939292"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="ราคารวม : "
+                android:textColor="#313131"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/status_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxx"
+                android:textColor="#313131"
+                android:textSize="20sp"/>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>

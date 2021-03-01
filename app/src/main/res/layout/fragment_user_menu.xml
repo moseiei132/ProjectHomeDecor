@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondaryTextColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserMenuFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/iconUser"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"/>
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/iconUser"
+            android:layout_marginLeft="40dp"
+            android:text="username"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/iconUser"
+            android:layout_below="@id/nameText"
+            android:text="email" />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryTextColor"
+        android:paddingLeft="10dp"
+        app:menu="@menu/bottomlist_menu"
+        android:theme="@style/menuSize"
+        app:elevation="0dp" />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/btn_admin"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryTextColor"
+        android:paddingLeft="10dp"
+        app:menu="@menu/menu_admin"
+        android:theme="@style/menuSize"
+        app:elevation="0dp" />
+
+
+</LinearLayout>

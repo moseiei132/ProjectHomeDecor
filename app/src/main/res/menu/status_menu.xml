@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/payment"
+        android:title="รอชำระเงิน"
+        android:onClick="payment"
+        android:icon="@drawable/box" />
+    <item android:id="@+id/delivery"
+        android:onClick="delivery"
+        android:title="ที่ต้องจัดส่ง"
+        android:icon="@drawable/delivery"/>
+    <item android:id="@+id/receive"
+        android:title="ที่ต้องได้รับ"
+        android:icon="@drawable/wallet" />
+</menu>
